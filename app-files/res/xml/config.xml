@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget android-packageName="com.squeegee" android-versionCode="100550058" id="com.squeegee" ios-CFBundleIdentifier="Squeegee" version="1.55.58" xmlns="http://www.w3.org/ns/widgets">
+    <feature name="ActionSheet">
+        <param name="android-package" value="nl.xservices.plugins.actionsheet.ActionSheet" />
+    </feature>
+    <feature name="LaunchMyApp">
+        <param name="android-package" value="nl.xservices.plugins.LaunchMyApp" />
+    </feature>
+    <feature name="Device">
+        <param name="android-package" value="org.apache.cordova.device.Device" />
+    </feature>
+    <feature name="Notification">
+        <param name="android-package" value="org.apache.cordova.dialogs.Notification" />
+    </feature>
+    <feature name="File">
+        <param name="android-package" value="org.apache.cordova.file.FileUtils" />
+        <param name="onload" value="true" />
+    </feature>
+    <allow-navigation href="cdvfile:*" />
+    <feature name="Geolocation">
+        <param name="android-package" value="org.apache.cordova.geolocation.Geolocation" />
+    </feature>
+    <feature name="LocalNotification">
+        <param name="android-package" value="de.appplant.cordova.plugin.localnotification.LocalNotification" />
+    </feature>
+    <feature name="SquarePOS">
+        <param name="android-package" value="com.squareup.plugin.square.SquarePOS" />
+    </feature>
+    <feature name="StatusBar">
+        <param name="android-package" value="org.apache.cordova.statusbar.StatusBar" />
+        <param name="onload" value="true" />
+    </feature>
+    <feature name="SocialSharing">
+        <param name="android-package" value="nl.xservices.plugins.SocialSharing" />
+    </feature>
+    <feature name="SQLitePlugin">
+        <param name="android-package" value="io.sqlc.SQLitePlugin" />
+    </feature>
+    <feature name="OneSignalPush">
+        <param name="android-package" value="com.onesignal.cordova.OneSignalPush" />
+    </feature>
+    <feature name="LaunchNavigator">
+        <param name="android-package" value="uk.co.workingedge.phonegap.plugin.LaunchNavigatorPlugin" />
+    </feature>
+    <feature name="CDVIonicKeyboard">
+        <param name="android-package" onload="true" value="io.ionic.keyboard.CDVIonicKeyboard" />
+    </feature>
+    <name>Squeegee</name>
+    <description>A must have scheduling app for Windows Cleaners, Housekeepers, Pool Cleaners, Lawn
+        Care and other Mobile Service Providers.</description>
+    <author email="support@squeeg.ee" href="https://squeeg.ee">Squeegee</author>
+    <access origin="https://balance.prod.sqgee.com" />
+    <allow-navigation href="https://integrations.sqgee.com/*" />
+    <allow-navigation href="https://onesignal.com/*" />
+    <allow-navigation href="https://cdn.onesignal.com/*" />
+    <allow-navigation href="https://squeegee.ams3.digitaloceanspaces.com/*" />
+    <allow-navigation href="https://www.google.co.uk/*" />
+    <allow-navigation href="https://www.google.com/*" />
+    <allow-navigation href="https://www.youtube.com/*" />
+    <allow-navigation href="https://js.stripe.com/*" />
+    <allow-navigation href="https://balance.prod.sqgee.com/*" />
+    <allow-navigation href="about:*" />
+    <allow-navigation href="about:srcdoc" />
+    <allow-navigation href="square-commerce-v1:*" />
+    <allow-intent href="https://*/*" />
+    <allow-intent href="tel:*" />
+    <allow-intent href="sms:*" />
+    <allow-intent href="blob:*" />
+    <allow-intent href="mailto:*" />
+    <allow-intent href="geo:*" />
+    <allow-intent href="maps://*" />
+    <allow-intent href="web+squeegee:*" />
+    <allow-intent href="about:*" />
+    <allow-intent href="square-commerce-v1:*" />
+    <allow-intent href="file:*" />
+    <content src="index.html" />
+    <access origin="*" />
+    <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <application android:allowBackup="false" android:fullBackupContent="false" />
+    </edit-config>
+    <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application/activity"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <activity android:exported="true" />
+    </edit-config>
+    <config-file parent="/*" target="AndroidManifest.xml"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+        <uses-permission android:name="android.permission.CAMERA" />
+    </config-file>
+    <config-file parent="/manifest/application/activity" target="app/src/main/AndroidManifest.xml"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <intent-filter android:autoVerify="true">
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="https" android:host="squeeg.ee" android:pathPrefix="/app/auth" />
+            <data android:scheme="https" android:host="preview.squeeg.ee" android:pathPrefix="/app/auth" />
+        </intent-filter>
+    </config-file>
+    <icon background="res/android/drawable/icon/ldpi-background.png" density="ldpi" foreground="res/android/drawable/icon/ldpi-foreground.png" />
+    <icon background="res/android/drawable/icon/mdpi-background.png" density="mdpi" foreground="res/android/drawable/icon/mdpi-foreground.png" />
+    <icon background="res/android/drawable/icon/hdpi-background.png" density="hdpi" foreground="res/android/drawable/icon/hdpi-foreground.png" />
+    <icon background="res/android/drawable/icon/xhdpi-background.png" density="xhdpi" foreground="res/android/drawable/icon/xhdpi-foreground.png" />
+    <icon background="res/android/drawable/icon/xxhdpi-background.png" density="xxhdpi" foreground="res/android/drawable/icon/xxhdpi-foreground.png" />
+    <icon background="res/android/drawable/icon/xxxhdpi-background.png" density="xxxhdpi" foreground="res/android/drawable/icon/xxxhdpi-foreground.png" />
+    <allow-intent href="market:*" />
+    <preference name="loglevel" value="DEBUG" />
+    <preference name="StatusBarOverlaysWebView" value="false" />
+    <preference name="GradlePluginKotlinEnabled" value="true" />
+    <preference name="hostname" value="squeegee-mobile-app" />
+    <preference name="InspectableWebview" value="true" />
+    <preference name="fullscreen" value="false" />
+    <preference name="android-minSdkVersion" value="29" />
+    <preference name="android-compileSdkVersion" value="35" />
+    <preference name="android-targetSdkVersion" value="35" />
+    <preference name="KeyboardDisplayRequiresUserAction" value="false" />
+    <preference name="UIWebViewBounce" value="false" />
+    <preference name="SplashMaintainAspectRatio" value="true" />
+    <preference name="AndroidLaunchMode" value="singleInstance" />
+    <preference name="Orientation" value="default" />
+    <preference name="loadUrlTimeoutValue" value="700000" />
+    <preference name="AndroidPersistentFileLocation" value="Compatibility" />
+    <preference name="WindowsStorePublisherName" value="My Name" />
+    <preference name="WindowsStoreIdentityName" value="913129ce-758c-7e3d-6503-77f85800e762" />
+    <preference name="ios-XCBuildConfiguration-TARGETED_DEVICE_FAMILY" value="1,2" />
+    <preference name="AutoHideSplashScreen" value="false" />
+    <preference name="FadeSplashScreen" value="false" />
+    <preference name="ShowSplashScreenSpinner" value="false" />
+    <preference name="SplashScreenBackgroundColor" value="0xFFFFFFFF" />
+    <preference name="DisallowOverscroll" value="true" />
+    <preference name="EnableViewportScale" value="false" />
+    <preference name="cordova.plugins.diagnostic.modules" value="LOCATION WIFI CAMERA NOTIFICATIONS EXTERNAL_STORAGE" />
+    <preference name="android-build-tool" value="gradle" />
+    <preference name="StatusBarBackgroundColor" value="#ff04154b" />
+    <preference name="StatusBarStyle" value="lightcontent" />
+    <preference name="AndroidWindowSplashScreenAnimatedIcon" value="res/android/drawable/icon/xxxhdpi-foreground.png" />
+    <preference name="AndroidWindowSplashScreenBackground" value="#ff333333" />
+</widget>

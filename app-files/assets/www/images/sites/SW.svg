@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="15.927 8.907 202.52 262.32" width="202.52" height="262.32" xmlns="http://www.w3.org/2000/svg">
+    <g class="cls-2" style="opacity: 0.42;" transform="matrix(1, 0, 0, 1, 14.92749, 7.906955)">
+        <path class="cls-3" d="M222.23,281.71c0,6.32-25.12,11.45-56.07,11.45s-56.07-5.13-56.07-11.45,25.1-11.45,56.07-11.45S222.23,275.4,222.23,281.71Z" transform="translate(-63.87 -29.84)" style="mix-blend-mode: multiply; fill: rgb(0, 160, 234); stroke-width: 5px; stroke: rgb(0, 0, 0);" />
+        <path class="cls-4" d="M267.39,126.91c0,58.94-101.25,154.8-101.25,154.8S64.87,185.85,64.87,126.91c0-53.08,45.32-96.07,101.27-96.07S267.39,73.83,267.39,126.91Z" transform="translate(-63.87 -29.84)" style="stroke-miterlimit: 10; fill: rgb(0, 160, 234); stroke-width: 5px; stroke: rgb(0, 0, 0);" />
+        <path class="cls-5" d="M240.9,125c0,39.14-33.49,70.92-74.81,70.92S91.38,164.11,91.38,125s33.48-71,74.71-71S240.9,85.75,240.9,125Z" transform="translate(-63.87 -29.84)" style="fill: rgb(0, 160, 234); stroke-width: 5px; stroke: rgb(0, 0, 0);" />
+    </g>
+    <path class="cls-6" d="M 179.014 95.09 C 179.014 135.88 144.164 168.95 101.134 168.95 C 58.104 168.95 23.334 135.88 23.334 95.09 C 23.334 54.3 58.204 21.22 101.134 21.22 C 144.064 21.22 179.014 54.3 179.014 95.09 Z" style="fill: rgb(255, 255, 255); stroke: rgb(183, 188, 188); stroke-miterlimit: 10;" transform="matrix(1, 0, 0, 1, 14.92749, 9.023027)" />
+    <path class="cls-8" d="M 139.995 106.846 C 140.141 116.411 136.964 125.73 131.007 133.214 C 119.216 147.618 101.538 147.915 99.138 147.894 C 96.737 147.873 78.699 147.597 66.887 132.853 C 61.12 125.452 58.042 116.312 58.154 106.931 C 58.154 98.242 59.875 92.803 76.107 68.688 C 94.422 41.026 98.182 37.818 99.648 37.818 C 101.114 37.818 105.342 42.853 121.744 68.2 C 137.785 93.015 139.889 98.03 139.995 106.846 Z" style="stroke: rgb(171, 228, 237); stroke-miterlimit: 10; stroke-width: 7px; paint-order: stroke; fill: rgb(47, 155, 222);" transform="matrix(1, 0, 0, 1, 14.92749, 9.023027)" />
+    <path class="cls-11" d="M 77.025 89.945 C 72.423 106.513 79.495 124.111 94.285 132.885" style="fill: none; stroke: rgb(171, 228, 237); stroke-linecap: round; stroke-miterlimit: 10; stroke-width: 7px;" transform="matrix(1, 0, 0, 1, 14.92749, 9.023027)" />
+</svg>

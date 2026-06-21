@@ -1,0 +1,21 @@
+{
+    "version": 8,
+    "name": "Basic Raster",
+    "sources": {
+        "osm": {
+            "type": "raster",
+            "tiles": [
+                "https://2.base.maps.ls.hereapi.com/maptile/2.1/maptile/newest/normal.day/{z}/{x}/{y}/512/png8?apiKey=U7VG3YF0RPY6AJHRwvdWbRN4vfw3N-4mRTnRq8fHj-k&ppi=250"
+            ],
+            "tileSize": 256
+        }
+    },
+    "glyphs": "https://api.maptiler.com/fonts/{fontstack}/{range}.pbf?key=ijRzWwfseLw1R8XwuMvR",
+    "layers": [
+        {
+            "id": "osm",
+            "type": "raster",
+            "source": "osm"
+        }
+    ]
+}

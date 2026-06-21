@@ -1,0 +1,15 @@
+{
+    "background_color": "#2c3e5d",
+    "description": "Work Scheduling, Invoicing, Expenses, Payments and Reporting for Field Service Professionals.",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "images/favicon.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "name": "Squeegee",
+    "short_name": "Squeegee",
+    "start_url": "/index.html"
+}
